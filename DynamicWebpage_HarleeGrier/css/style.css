@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: arial, sans-serif;
+}
+.imageMain {
+    width: 100%;
+    height: 100%;
+    cursor:pointer;
+}
+
+/* set rules for areas */
+.content-area {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0 100px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .container img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-image: url("clickIngrediants.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .container .btn:hover {
+    background-color: black;
+    color: white;
+  }
+
+/*for overlay*/
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+  .grid-parent {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    color: #ffffff;
+    background-color: #520000;
+    padding: 10px;
+    margin: 100px 100px;
+    min-width: 100px;
+
+    @media only screen and (max-width: 100%) {
+      
+        display: flex;
+        min-width: 100px;
+        margin:auto;
+        padding: auto;
+        grid-template-columns: auto 1;
+      
+    }
+}
+
+.grid-parent > div {
+  background-color: rgba(252, 211, 195, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  min-width: 100px;
+  @media only screen and (max-width: 100%) {
+      
+    display: flex;
+    min-width: 100%;
+    margin:auto;
+    padding: auto;
+    grid-template-columns: auto 1;
+  
+}
+}
+
+#overlayHand {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+  #overlayHand2 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+  #overlayHand3 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+  #overlayHand4 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+  #overlayHand5 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+  #overlayHand6 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+  #overlayHand7 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+  #overlayHand8 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+  #overlayHand9 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  /*Button*/
+  .button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .button2 {
+    background-color: #aa0404;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+ /*Results*/
+  .overlayResults {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+
+  .btn3 {
+    position: absolute;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  #btn4 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+  #btn4:hover {
+    background-color: #f44336;
+    color: white;
+  }
+
+  footer {
+    text-align: center;
+  }
+  
+#Doggo-Play, #cat-eye-angry, #cat-eye-open, #dog-eye-open {
+    display: none;
+}

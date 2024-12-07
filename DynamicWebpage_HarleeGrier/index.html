@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cook Game</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+<!------------------------------SVG attempt on page------------------------------>
+    <body>
+
+        <!-- <div class="content-area">
+
+            <svg id="Scene" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 995 768">
+    
+                <g id="Pott">
+                    
+
+                </g>
+
+            </svg>
+
+        </div> -->
+
+<!------------------------------alt content------------------------------>
+    <!--Header and Nav-->
+    <div>
+        <header>      
+            
+        </header> 
+
+    <!--This is the main content area-->
+<div class="content-area">
+
+
+
+    <div id="myNav" class="overlay">
+        <!--
+        <div id="myNav" class="overlay"><button class="button button2" onclick="off()">X</button></div>
+
+        -->
+
+        <a class="closebtn">&times;</a>
+
+        <div class="grid-parent">
+            <div>
+                <img src="images/carrots.png" alt="1" class="carrots">
+                
+            </div>
+            <div>
+                <img src="images/cabbage.png" alt="2" class="cabbage">
+            </div>
+            <div>
+                <img src="images/bugs.png" alt="3" class="bugs">
+            </div>
+            <div>
+                <img src="images/onion.png" alt="4" class="onion">
+            </div>
+            <div>
+                <img src="images/dirt.png" alt="5" class="dirt">
+            </div>
+            <!-----K----->
+            <div>
+                <img src="images/rocks.png" alt="6" class="rocks">
+            </div>
+            <div>
+                <img src="images/meat.png" alt="7" class="meat">
+            </div>
+            <div>
+                <img src="images/owo.png" alt="8" class="owo">
+            </div>
+            <div>
+                <img src="images/broth.png" alt="9" class="broth">
+            </div>
+            
+        </div>
+
+</div>
+
+    <div class="container">
+
+        <button id="btn4">Show Results!!</button>
+
+        <img class="imageMain" src="images/ingredients.png" alt="main image">
+            
+          <img src="images/carrotsAdd.png" alt="1-c"  id="overlayHand" class="hand-carrots">
+          <img src="images/cabbageAdd.png" alt="1-c" id="overlayHand2" class="hand-cabbage">
+          <img src="images/bugsAdd.png" alt="1-c" id="overlayHand3" class="hand-bugs">
+          <img src="images/rocksAdd.png" alt="1-c" id="overlayHand4" class="hand-rocks">
+          <img src="images/brothAdd.png" alt="1-c" id="overlayHand5" class="hand-broth">
+          <img src="images/meatAdd.png" alt="1-c" id="overlayHand6" class="hand-meat">
+          <img src="images/owoAdd.png" alt="1-c" id="overlayHand7" class="hand-owo">
+          <img src="images/dirtAdd.png" alt="1-c" id="overlayHand8" class="hand-dirt">
+          <img src="images/onionAdd.png" alt="1-c" id="overlayHand9" class="hand-onion">
+    </div>
+    
+<div id="overlayResults" class="overlayResults">
+
+    <button class="btn3">&times;</button>
+    <img class="imageResult" src="images/deliciousResult.png" alt="image">
+    <img class="imageResultG" src="images/grossResult.png" alt="image">
+
+</div>
+        
+</div>
+<!--Footer-->
+
+        <footer class="signature">
+            <p>© Harlee Grier Web Design 2024</p>
+        </footer>
+<!----------------------------------------audio------------------------------------------>
+        <audio loop id="pot-sound">
+            <source src="audio/456382__monsterthing__boiling-pot-of-water.mp3" type="audio/mp3">
+        </audio>
+        <audio id="add-sound">
+            <source src="audio/406087__yin_yang_jake007__water-splash.wav" type="audio/wav">
+        </audio>
+        <audio id="win-sound">
+            <source src="audio/274181__littlerobotsoundfactory__jingle_win_synth_06.wav" type="audio/wav">
+        </audio>
+        <audio id="loose-sound">
+            <source src="audio/391536__unlistenable__electro-loose-sound.wav" type="audio/wav">
+        </audio>
+
+<!-------JS script------->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
